@@ -1,6 +1,6 @@
 # hubot-slack-reactions
 
-A hubot script like /star me except for slack reactions.
+A hubot script like /star me except for slack reactions. Suggestions welcome read over the [contributing](/CONTRIBUTING.md) guidelines.
 
 See [`src/slack-reactions.coffee`](src/slack-reactions.coffee) for full documentation.
 
@@ -32,3 +32,12 @@ Then add **hubot-slack-reactions** to your `external-scripts.json`:
 user1>> hubot react me -1year
 hubot>> https://chat.slack.com/archives/general/p1d39f3463d000068
 ```
+
+## Related
+
+* [hubot](https://github.com/github/hubot)
+* [hubot-scripts](https://github.com/hubot-scripts)
+
+## License
+
+MIT &copy; [Jon Rohan](http://jonrohan.codes)
