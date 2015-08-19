@@ -26,7 +26,7 @@ module.exports = (robot) ->
       if arg.match(/^(today|yesterday|week|month|year)/)
         on_date = arg
 
-      else if arg.match(/^(-|\d|)/)
+      else if arg.match(/^(\-|\d)/)
         try
           if (parts = arg.split('+-')) and parts.length > 1
             date = Date.parse parts[0]
