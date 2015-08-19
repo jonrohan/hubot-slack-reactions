@@ -91,11 +91,12 @@ module.exports = (robot) ->
           matches = result.messages.matches
           hits = []
 
-          if result.messages.total == 0
+          matches = matches.filter (m) -> m.type != "group"
+
+          if matches.length == 0
             msg.send "No reactions found =("
             return
 
-          matches = matches.filter (m) -> m.type != "group"
 
           for i in [1..num]
             hit = matches.splice(Math.floor(Math.random() * matches.length), 1)[0]
