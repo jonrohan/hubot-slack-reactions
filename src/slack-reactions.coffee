@@ -77,10 +77,9 @@ module.exports = (robot) ->
     q += " #{terms.join(" ")}" if terms.length > 0
 
     msg
-      .http("https://slack.com/api/search.all")
+      .http("https://slack.com/api/search.messages")
       .query
         query: q,
-        pretty: 1,
         token: process.env.SLACK_ACCESS_TOKEN
       .get() (err, resp, body) ->
         if err?
@@ -95,6 +94,8 @@ module.exports = (robot) ->
           if result.messages.total == 0
             msg.send "No reactions found =("
             return
+
+          matches = matches.filter (m) -> m.type != "group"
 
           for i in [1..num]
             hit = matches.splice(Math.floor(Math.random() * matches.length), 1)[0]
