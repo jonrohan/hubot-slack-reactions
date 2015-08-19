@@ -1,22 +1,23 @@
 {
   "name": "hubot-slack-reactions",
   "description": "A hubot script like /star me except for slack reactions.",
-  "version": "0.0.0",
-  "author": "Jon Rohan <rohan@github.com>",
+  "version": "0.0.1",
+  "author": "Jon Rohan <jon@jonrohan.me>",
   "license": "MIT",
 
   "keywords": "hubot, hubot-scripts, slack, reactions, star, zap",
 
   "repository": {
     "type": "git",
-    "url": "git://github.com/hubot-scripts/hubot-slack-reactions.git"
+    "url": "git://github.com/jonrohan/hubot-slack-reactions.git"
   },
 
   "bugs": {
-    "url": "https://github.com/hubot-scripts/hubot-slack-reactions/issues"
+    "url": "https://github.com/jonrohan/hubot-slack-reactions/issues"
   },
 
   "dependencies": {
+    "datejs": "0.0.2"
   },
 
   "peerDependencies": {
