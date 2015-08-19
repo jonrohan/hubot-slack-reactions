@@ -1,8 +1,23 @@
 # hubot-slack-reactions
 
-A hubot script like /star me except for slack reactions. Suggestions welcome read over the [contributing](/CONTRIBUTING.md) guidelines.
+A hubot script like [/star me](#starme) except for slack reactions. Suggestions welcome read over the [contributing](/CONTRIBUTING.md) guidelines.
 
 See [`src/slack-reactions.coffee`](src/slack-reactions.coffee) for full documentation.
+
+#### Starme
+
+Star me is what we would use at GitHub to pull random campfire stars from the api and post them in chat. We would use this feature to 
+
+- `star me -1year` Laugh about what we were saying a year ago today
+- `star me pizza` Laugh about people talking about pizza
+- `star me today` Catch up on the highlights from the chat room.
+
+Slack uses [emoji reactions](https://slack.zendesk.com/hc/en-us/articles/206870317-Emoji-reactions) for all sorts of fun. This script does the same as the old star me, but uses reactions. There's even some useful shortcuts
+
+- `star me` Get messages with reaction :star:
+- `zap me` Get messages with reaction :zap:
+- `react me :poop:` Get messages with reaction :poop:
+- `react me @jonrohan :poop: -1year` Get the messages from jonrohan with reaction :poop: from one year ago today
 
 ## Configuration
 
