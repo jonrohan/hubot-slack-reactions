@@ -6,7 +6,7 @@ See [`src/slack-reactions.coffee`](src/slack-reactions.coffee) for full document
 
 #### Starme
 
-Star me is what we would use at GitHub to pull random campfire stars from the api and post them in chat. We would use this feature to 
+Star me is what we would use at GitHub to pull random campfire stars from the api and post them in chat. We would use this feature to
 
 - `star me -1year` Laugh about what we were saying a year ago today
 - `star me pizza` Laugh about people talking about pizza
@@ -50,8 +50,8 @@ hubot>> https://chat.slack.com/archives/general/p1d39f3463d000068
 
 ## Related
 
-* [hubot](https://github.com/github/hubot)
-* [hubot-scripts](https://github.com/hubot-scripts)
+* [hubot-rubygems-search](https://github.com/jonrohan/hubot-rubygems-search)
+* [hubot-itunes-search](https://github.com/jonrohan/hubot-itunes-search)
 
 ## License
 
