@@ -10,7 +10,7 @@
 #   hubot react me :star:    - Show a message with :star: reactions
 #
 # Author:
-#   Jon Rohan <jon@jonrohan.me>
+#   Jon Rohan <yes@jonrohan.codes>
 
 require 'datejs'
 
