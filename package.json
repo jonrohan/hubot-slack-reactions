@@ -1,7 +1,7 @@
 {
   "name": "hubot-slack-reactions",
   "description": "A hubot script like /star me except for slack reactions.",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "author": "Jon Rohan <yes@jonrohan.codes>",
   "license": "MIT",
   "keywords": "hubot, hubot-scripts, slack, reactions, star, zap",
