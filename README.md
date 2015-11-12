@@ -24,7 +24,7 @@ Slack uses [emoji reactions](https://slack.zendesk.com/hc/en-us/articles/2068703
 You'll need to get your [Slack API Auth token](https://api.slack.com/web#authentication). Once you've gotten it for your org, set it as an environment variable.
 
 ```sh
-export SLACK_ACCESS_TOKEN=xxxxxxxx
+export HUBOT_SLACK_TOKEN=xxxxxxxx
 ```
 
 ## Installation
