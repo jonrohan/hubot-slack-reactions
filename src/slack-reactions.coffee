@@ -2,7 +2,7 @@
 #   A hubot script like /star me except for slack reactions.
 #
 # Configuration:
-#   HUBOT_SLACK_TOKEN
+#   SLACK_ACCESS_TOKEN
 #
 # Commands:
 #   hubot react me -1year    - Show a random reaction from a year ago today
@@ -80,7 +80,7 @@ module.exports = (robot) ->
       .http("https://slack.com/api/search.messages")
       .query
         query: q,
-        token: process.env.SLACK_ACCESS_TOKEN || process.env.HUBOT_SLACK_TOKEN
+        token: process.env.SLACK_ACCESS_TOKEN
       .get() (err, resp, body) ->
         if err?
           robot.emit 'error', err, msg
