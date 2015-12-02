@@ -103,6 +103,13 @@ module.exports = (robot) ->
             hits.push(hit) if hit
 
           for star in hits
-            msg.send star.permalink
+            if robot.adapterName is 'slack'
+              msgData =
+                channel: msg.message.room
+                text: star.permalink
+                unfurl_links: true
+              robot.emit 'slack.attachment', msgData
+            else
+              msg.send star.permalink
         else
           msg.send "couldn't retrieve reactions from chat: #{resp.statusCode} #{body}"
