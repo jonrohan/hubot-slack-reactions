@@ -91,7 +91,8 @@ module.exports = (robot) ->
           matches = result.messages.matches
           hits = []
 
-          matches = matches.filter (m) -> m.type != "group"
+          # Only show messages in public rooms
+          matches = matches.filter (m) -> m.type == "message"
 
           if matches.length == 0
             msg.send "No reactions found =("
