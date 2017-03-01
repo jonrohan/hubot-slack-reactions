@@ -1,5 +1,7 @@
 # hubot-slack-reactions
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/jonrohan/hubot-slack-reactions.svg)](https://greenkeeper.io/)
+
 A hubot script like [/star me](#starme) except for slack reactions. Suggestions welcome read over the [contributing](/CONTRIBUTING.md) guidelines.
 
 See [`src/slack-reactions.coffee`](src/slack-reactions.coffee) for full documentation.
